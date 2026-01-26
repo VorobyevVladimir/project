@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 500px;
+    padding: 5px;
+    background-color: #f9f9f9;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.description {
+    -webkit-line-clamp: 5;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
