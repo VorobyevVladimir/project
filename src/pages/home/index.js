@@ -13,9 +13,9 @@ export const home = () => {
     shopNowButton.classList.add(styles.shopButton)
 
     const contactButton = document.createElement('button')
-    shopNowButton.setAttribute('id', 'contactButton')
-    shopNowButton.innerText = 'CONTACT US';
-    shopNowButton.classList.add(styles.contactButton)
+    contactButton.setAttribute('id', 'contactButton')
+    contactButton.innerText = 'CONTACT US';
+    contactButton.classList.add(styles.contactButton)
 
 
     wrapper.appendChild(shopNowButton)
