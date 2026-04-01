@@ -1,0 +1,47 @@
+ .footer {
+    width: 100%;
+     height: 4rem;
+    background-color: #b3122b;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        sans-serif;
+}
+
+.inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    padding: 12px 24px;
+    font-size: 12px;
+}
+
+.leftSection {
+    white-space: pre-line;
+}
+
+.rightSection {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 4px;
+}
+
+.nav{
+    display: flex;
+    gap: 16px;
+}
+
+ a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+ a:hover {
+    text-decoration: underline;
+}
+
+

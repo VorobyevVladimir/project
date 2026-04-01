@@ -1,5 +1,5 @@
 import styles from './styles.module.css'
-import {contact} from "../contact";
+
 
 
 export const home = () => {
@@ -7,19 +7,18 @@ export const home = () => {
     wrapper.setAttribute('id', 'mainPageWrapper')
     wrapper.classList.add(styles.container)
 
-    const shopNowButton = document.createElement('button')
-    shopNowButton.setAttribute('id', 'shopNowButton')
-    shopNowButton.innerText = 'SHOP NOW';
-    shopNowButton.classList.add(styles.shopButton)
-
-    const contactButton = document.createElement('button')
-    contactButton.setAttribute('id', 'contactButton')
-    contactButton.innerText = 'CONTACT US';
-    contactButton.classList.add(styles.contactButton)
 
 
-    wrapper.appendChild(shopNowButton)
-    wrapper.appendChild(contactButton)
+    const title = document.createElement('h1');
+    title.textContent = 'SHOP';
+    title.classList.add(styles.title)
+
+    const subtitle = document.createElement('span');
+    subtitle.textContent = 'ELEVATE YOUR BRAND WITH OUR GLOBAL REACH \n AND PASSIONATE COMMUNITY';
+    subtitle.classList.add(styles.subtitle)
+
+    wrapper.appendChild(title);
+    wrapper.appendChild(subtitle);
 
     return wrapper
 }

@@ -1,0 +1,33 @@
+.wrapper {
+    width: 100%;
+    padding: 24px;
+    box-sizing: border-box;
+}
+
+.title {
+    margin: 0 0 24px;
+}
+
+.filtersContainer {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.filterLabel {
+    font-weight: 600;
+}
+
+.filterSelect {
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+.productsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 16px;
+}

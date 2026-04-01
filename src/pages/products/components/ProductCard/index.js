@@ -6,23 +6,37 @@ export const productCard = ({category,description,id,image,price,title,rating}) 
     container.classList.add(styles.container)
     container.setAttribute('id',id)
     const categoryTag = document.createElement('p')
-    const descriptionTag = document.createElement('p')
     const titleTag = document.createElement('h4')
     const priceTag = document.createElement('p')
+    const buyButton = document.createElement('button')
     const img = document.createElement('img')
     img.setAttribute('src', image)
     img.setAttribute('alt', title)
-    descriptionTag.classList.add(styles.description)
+    img.classList.add(styles.image)
     categoryTag.innerText = category
-    descriptionTag.innerText = description
-    priceTag.innerText = price
+    priceTag.innerText = `$${price}`
     titleTag.innerText = title
+    buyButton.innerText = 'Buy'
+    buyButton.classList.add(styles.buyButton)
+    buyButton.addEventListener('click', () => {
+        const cartItems = JSON.parse(localStorage.getItem('cartItems') || '[]')
+        const productInCart = cartItems.find((item) => item.id === id)
+
+        if (productInCart) {
+            productInCart.quantity += 1
+        } else {
+            cartItems.push({id, title, price, image, category, quantity: 1})
+        }
+
+        localStorage.setItem('cartItems', JSON.stringify(cartItems))
+        buyButton.innerText = 'Added'
+    })
 
     container.append(titleTag)
-    container.append(descriptionTag)
     container.append(img)
     container.append(priceTag)
     container.append(categoryTag)
+    container.append(buyButton)
 
     return container
 }

@@ -2,16 +2,28 @@
     display: flex;
     flex-direction: column;
     width: 200px;
-    height: 500px;
+    min-height: 420px;
     padding: 5px;
     background-color: #f9f9f9;
     border: 1px solid black;
     border-radius: 10px;
+    gap: 8px;
 }
 
-.description {
-    -webkit-line-clamp: 5;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+.image {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    background-color: #fff;
+    border-radius: 6px;
+}
+
+.buyButton {
+    margin-top: auto;
+    padding: 8px 12px;
+    border: 1px solid black;
+    border-radius: 6px;
+    background-color: #111;
+    color: #fff;
+    cursor: pointer;
 }
