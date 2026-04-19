@@ -79,6 +79,10 @@ export const contact = () => {
     const submitButton = document.createElement("button");
     submitButton.textContent = "Submit Form";
     submitButton.classList.add(styles.submitButton);
+
+    const formMessage = document.createElement("p");
+    formMessage.classList.add(styles.formMessage);
+
     submitButton.addEventListener("click", () => {
         const hasEmptyField = [
             firstNameInput.value,
@@ -88,6 +92,14 @@ export const contact = () => {
             messageInput.value
         ].some((value) => value.trim() === "");
 
+        if (hasEmptyField) {
+            formMessage.textContent = "All fields need to be filled.";
+            formMessage.classList.add(styles.errorMessage);
+            return;
+        }
+
+        formMessage.textContent = "";
+        formMessage.classList.remove(styles.errorMessage);
         if (!hasEmptyField) {
             alert("form sent");
         }
@@ -103,6 +115,7 @@ export const contact = () => {
     formCard.appendChild(phoneRow);
     formCard.appendChild(messageRow);
     formCard.appendChild(submitButton);
+    formCard.appendChild(formMessage);
     formCard.appendChild(disclaimer);
 
 
