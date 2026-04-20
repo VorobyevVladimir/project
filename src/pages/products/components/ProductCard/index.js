@@ -9,6 +9,7 @@ export const productCard = ({category,description,id,image,price,title,rating}) 
     const titleTag = document.createElement('h4')
     const priceTag = document.createElement('p')
     const buyButton = document.createElement('button')
+    let resetButtonTextTimer
     const img = document.createElement('img')
     img.setAttribute('src', image)
     img.setAttribute('alt', title)
@@ -30,6 +31,11 @@ export const productCard = ({category,description,id,image,price,title,rating}) 
 
         localStorage.setItem('cartItems', JSON.stringify(cartItems))
         buyButton.innerText = 'Added'
+
+        clearTimeout(resetButtonTextTimer)
+        resetButtonTextTimer = setTimeout(() => {
+            buyButton.innerText = 'Buy'
+        }, 1200)
     })
 
     container.append(titleTag)

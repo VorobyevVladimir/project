@@ -2,7 +2,7 @@
   min-height: 100vh;
   width: 100%;
   padding: 4rem 10%;
-  background-color: #faefe4;
+  background: linear-gradient(180deg, #fff2ee 0%, #fff8f6 55%);
   font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;
 }
@@ -11,10 +11,12 @@
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
-  background-color: #b41b32;
-  border-radius: 4px;
+  background: linear-gradient(145deg, #ffd6cd 0%, #ffc1b4 100%);
+  border-radius: 10px;
   padding: 2rem 2.5rem 1.5rem;
-  color: #ffffff;
+  color: #3a130d;
+  border: 1px solid #d28c7c;
+  box-shadow: 0 14px 28px rgba(126, 44, 26, 0.15);
 }
 
 .row {
@@ -48,8 +50,15 @@
   padding: 0.7rem 0.8rem;
   font-size: 0.9rem;
   box-sizing: border-box;
-  background-color: #2e050c;
-  color: #ffffff;
+  background-color: #fff8f5;
+  color: #3a130d;
+  border: 1px solid #d8a092;
+}
+
+.input:focus,
+.textarea:focus {
+  outline: 2px solid #c95f4b;
+  outline-offset: 1px;
 }
 
 .textarea {
@@ -63,15 +72,15 @@
   padding: 0.9rem 1rem;
   border: none;
   border-radius: 3px;
-  background-color: #f7f0ea;
-  color: #b41b32;
+  background-color: #8f261a;
+  color: #ffffff;
   font-weight: bold;
   text-transform: uppercase;
   cursor: pointer;
 }
 
 .submitButton:hover {
-  background-color: #ffffff;
+  filter: brightness(1.05);
 }
 
 .formMessage {
@@ -81,5 +90,5 @@
 }
 
 .errorMessage {
-  color: #ffd6dc;
+  color: #8f261a;
 }

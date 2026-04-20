@@ -72,7 +72,19 @@ export const cart = () => {
     totalTag.innerText = `Total: $${total.toFixed(2)}`
     totalTag.classList.add(styles.totalTag)
 
-    wrapper.append(title, list, totalTag)
+    const checkoutButton = document.createElement('button')
+    checkoutButton.innerText = 'Checkout'
+    checkoutButton.classList.add(styles.checkoutButton)
+    checkoutButton.addEventListener('click', () => {
+        localStorage.removeItem('cartItems')
+        window.location.reload()
+    })
+
+    const totalSection = document.createElement('div')
+    totalSection.classList.add(styles.totalSection)
+    totalSection.append(checkoutButton, totalTag)
+
+    wrapper.append(title, list, totalSection)
 
     return wrapper
 }

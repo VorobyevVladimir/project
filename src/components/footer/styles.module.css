@@ -1,10 +1,13 @@
- .footer {
+.footer {
     width: 100%;
-     height: 4rem;
-    background-color: #b3122b;
-    color: white;
+    min-height: 4rem;
+    background-color: #8f261a;
+    border: 1px solid #711b12;
+    border-radius: 10px;
+    color: #fff5f2;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
         sans-serif;
+    box-shadow: 0 6px 16px rgba(53, 21, 15, 0.08);
 }
 
 .inner {
@@ -14,7 +17,7 @@
     align-items: center;
     justify-content: space-between;
     gap: 32px;
-    padding: 12px 24px;
+    padding: 12px 20px;
     font-size: 12px;
 }
 
@@ -34,14 +37,41 @@
     gap: 16px;
 }
 
- a {
-    color: #ffffff;
+.nav a {
+    color: #fff5f2;
     text-decoration: none;
     font-size: 12px;
+    opacity: 0.92;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    transition: opacity 0.2s ease;
 }
 
- a:hover {
-    text-decoration: underline;
+.nav a:hover {
+    opacity: 1;
+}
+
+.phoneText {
+    margin: 0;
+    letter-spacing: 0.03em;
+}
+
+@media (max-width: 640px) {
+    .inner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .rightSection {
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .nav {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
 }
 
 
