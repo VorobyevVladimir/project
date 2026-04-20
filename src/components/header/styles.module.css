@@ -1,7 +1,12 @@
 .header {
     width: 100%;
-    height: 40px;
-    background-color: #b3122b;
-    border-radius: 4px;
-    border: 1px black  solid;
+    min-height: 56px;
+    background-color: #8f261a;
+    border-radius: 10px;
+    border: 1px solid #711b12;
+    box-shadow: 0 6px 16px rgba(53, 21, 15, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    backdrop-filter: blur(4px);
 }
