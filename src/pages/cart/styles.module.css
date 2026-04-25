@@ -13,12 +13,12 @@
     font-size: 2rem;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: #b23524;
+    color: #1d4c9e;
 }
 
 .emptyText {
     margin: 0;
-    color: #74453b;
+    color: #4b6386;
     font-size: 1.1rem;
 }
 
@@ -34,10 +34,10 @@
     align-items: center;
     gap: 16px;
     padding: 18px;
-    border: 1px solid #e9b8aa;
+    border: 1px solid #c7daf9;
     border-radius: 12px;
-    background: #fff1ed;
-    box-shadow: 0 6px 16px rgba(53, 21, 15, 0.08);
+    background: linear-gradient(180deg, #ffffff, #f4f9ff);
+    box-shadow: 0 8px 20px rgba(23, 56, 114, 0.1);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -69,7 +69,7 @@
 .itemCategory {
     margin: 0;
     font-size: 0.85rem;
-    color: #74453b;
+    color: #4b6386;
     text-transform: capitalize;
 }
 
@@ -77,7 +77,7 @@
     margin: 0;
     font-size: 0.95rem;
     white-space: nowrap;
-    color: #74453b;
+    color: #4b6386;
 }
 
 .subtotal {
@@ -90,10 +90,10 @@
 
 .deleteButton {
     padding: 8px 14px;
-    border: 1px solid #b23524;
+    border: 1px solid #1d4c9e;
     border-radius: 6px;
-    background: #fff1ed;
-    color: #b23524;
+    background: #f4f9ff;
+    color: #1d4c9e;
     cursor: pointer;
     font-size: 0.9rem;
     font-family: inherit;
@@ -101,14 +101,14 @@
 }
 
 .deleteButton:hover {
-    background: #b23524;
+    background: #1d4c9e;
     color: #ffffff;
     transform: translateY(-1px);
 }
 
 .deleteButton:focus-visible,
 .checkoutButton:focus-visible {
-    outline: 2px solid #b23524;
+    outline: 2px solid #1d4c9e;
     outline-offset: 2px;
 }
 
@@ -116,18 +116,18 @@
     margin: 0;
     font-size: 1.4rem;
     font-family: Arial, Helvetica, sans-serif;
-    color: #b23524;
+    color: #1d4c9e;
 }
 
 .totalSection {
     margin-top: 24px;
     padding-top: 16px;
-    border-top: 2px solid #e9b8aa;
+    border-top: 2px solid #c7daf9;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 12px;
-    background: rgba(0, 0, 0, 0.02);
+    background: rgba(29, 76, 158, 0.06);
     border-radius: 10px;
     padding: 16px;
 }
@@ -136,7 +136,7 @@
     padding: 12px 26px;
     border: 1px solid transparent;
     border-radius: 8px;
-    background: linear-gradient(135deg, #b23524, #111);
+    background: linear-gradient(135deg, #1f4fa4, #102c61);
     color: #ffffff;
     cursor: pointer;
     font-size: 1rem;

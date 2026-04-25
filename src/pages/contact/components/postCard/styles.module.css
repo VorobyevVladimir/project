@@ -4,9 +4,9 @@
     width: 200px;
     height: auto;
     padding: 5px;
-    background-color: #fff1ed;
-    border: 1px solid #e9b8aa;
+    background: linear-gradient(180deg, #ffffff, #f4f9ff);
+    border: 1px solid #c7daf9;
     border-radius: 10px;
-    color: #35150f;
+    color: #10203a;
 }
 

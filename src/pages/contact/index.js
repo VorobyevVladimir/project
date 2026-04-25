@@ -82,15 +82,18 @@ export const contact = () => {
 
     const formMessage = document.createElement("p");
     formMessage.classList.add(styles.formMessage);
+    const formFields = [
+        firstNameInput,
+        lastNameInput,
+        emailRowInput,
+        phoneInput,
+        messageInput
+    ];
 
     submitButton.addEventListener("click", () => {
-        const hasEmptyField = [
-            firstNameInput.value,
-            lastNameInput.value,
-            emailRowInput.value,
-            phoneInput.value,
-            messageInput.value
-        ].some((value) => value.trim() === "");
+        const hasEmptyField = formFields
+            .map((field) => field.value)
+            .some((value) => value.trim() === "");
 
         if (hasEmptyField) {
             formMessage.textContent = "All fields need to be filled.";
@@ -102,6 +105,9 @@ export const contact = () => {
         formMessage.classList.remove(styles.errorMessage);
         if (!hasEmptyField) {
             alert("form sent");
+            formFields.forEach((field) => {
+                field.value = "";
+            });
         }
     });
 

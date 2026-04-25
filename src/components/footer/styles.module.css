@@ -1,13 +1,13 @@
 .footer {
     width: 100%;
     min-height: 4rem;
-    background-color: #8f261a;
-    border: 1px solid #711b12;
+    background: linear-gradient(135deg, #163b7e, #102c61);
+    border: 1px solid #244f98;
     border-radius: 10px;
-    color: #fff5f2;
+    color: #ecf5ff;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
         sans-serif;
-    box-shadow: 0 6px 16px rgba(53, 21, 15, 0.08);
+    box-shadow: 0 8px 22px rgba(17, 48, 105, 0.2);
 }
 
 .inner {
@@ -38,7 +38,7 @@
 }
 
 .nav a {
-    color: #fff5f2;
+    color: #ecf5ff;
     text-decoration: none;
     font-size: 12px;
     opacity: 0.92;

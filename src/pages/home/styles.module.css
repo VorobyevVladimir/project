@@ -8,10 +8,23 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    position: relative;
     background-image: url("src/pages/home/mainPageBg.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(7, 26, 54, 0.48), rgba(7, 26, 54, 0.64));
+}
+
+.container > * {
+    position: relative;
+    z-index: 1;
 }
 
 
@@ -30,7 +43,7 @@
     display: block;
     max-width: 52rem;
     margin: 0;
-    color: #f1f1f1;
+    color: #e8f2ff;
     font-size: 1.5rem;
     line-height: 1.7;
     font-family: Arial, Helvetica, sans-serif;
@@ -43,7 +56,7 @@
 .description {
     margin: 0;
     max-width: 48rem;
-    color: #f5f5f5;
+    color: #d9e8ff;
     font-size: 1.05rem;
     line-height: 1.6;
     font-family: Arial, Helvetica, sans-serif;
@@ -57,18 +70,18 @@
     min-width: 180px;
     margin-top: 0.75rem;
     padding: 0.75rem 1.25rem;
-    border: 1px solid #b23524;
+    border: 1px solid #6fd3ff;
     border-radius: 8px;
     color: #ffffff;
-    background: #b23524;
-    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #27a3db, #1d7fba);
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
     font-weight: 600;
     text-decoration: none;
     transition: all 0.2s ease;
 }
 
 .ctaButton:hover {
-    filter: brightness(0.9);
+    filter: brightness(1.08);
 }
 
 .highlights {
@@ -80,8 +93,8 @@
 }
 
 .card {
-    background: rgba(15, 23, 42, 0.56);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(10, 35, 76, 0.5);
+    border: 1px solid rgba(181, 219, 255, 0.35);
     border-radius: 10px;
     padding: 1.2rem;
     text-align: left;
@@ -97,7 +110,7 @@
 
 .cardText {
     margin: 0;
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(228, 242, 255, 0.95);
     font-size: 0.95rem;
     line-height: 1.5;
     font-family: Arial, Helvetica, sans-serif;

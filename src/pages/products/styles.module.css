@@ -10,7 +10,7 @@
     margin: 0 0 22px;
     font-size: 2rem;
     letter-spacing: 0.08em;
-    color: #b23524;
+    color: #1d4c9e;
 }
 
 .filtersContainer {
@@ -19,10 +19,8 @@
     gap: 10px;
     margin-bottom: 20px;
     padding: 12px;
-    border: 1px solid #e9b8aa;
-    border-radius: 10px;
-    background: #fff1ed;
-    box-shadow: 0 6px 16px rgba(53, 21, 15, 0.08);
+    background: #edf4ff;
+    box-shadow: 0 8px 20px rgba(23, 56, 114, 0.1);
 }
 
 .filterLabel {
@@ -31,10 +29,10 @@
 
 .filterSelect {
     padding: 6px 10px;
-    border: 1px solid #e9b8aa;
+    border: 1px solid #b8d1f5;
     border-radius: 6px;
-    background-color: #fff1ed;
-    color: #35150f;
+    background-color: #f7fbff;
+    color: #10203a;
     min-width: 220px;
     cursor: pointer;
 }
