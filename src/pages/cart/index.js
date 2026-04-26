@@ -45,7 +45,7 @@ export const cart = () => {
         textWrap.append(itemTitle, itemCategory)
 
         const quantity = document.createElement('p')
-        quantity.innerText = `Qty: ${item.quantity}`
+        quantity.innerText = `Quantity: ${item.quantity}`
         quantity.classList.add(styles.quantity)
 
         const subtotalValue = Number(item.price) * Number(item.quantity)

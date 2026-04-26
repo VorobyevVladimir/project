@@ -2,7 +2,7 @@
     width: 100%;
     min-height: 56px;
     background: linear-gradient(135deg, #1f4fa4, #153a82);
-    border-radius: 10px;
+    border-radius: 4px;
     border: 1px solid #2e63b6;
     box-shadow: 0 8px 22px rgba(17, 48, 105, 0.2);
     position: sticky;

@@ -7,10 +7,6 @@
 body {
     margin: 0;
     padding: 0;
-    background: radial-gradient(circle at 0% 0%, #eaf2ff 0%, rgba(234, 242, 255, 0) 40%),
-        radial-gradient(circle at 100% 100%, #eef9ff 0%, rgba(238, 249, 255, 0) 45%),
-        #f7faff;
-    color: #10203a;
     font-family: "Segoe UI", Arial, Helvetica, sans-serif;
     line-height: 1.5;
 }

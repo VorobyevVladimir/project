@@ -37,7 +37,6 @@ export const footer = () => {
 
     right.appendChild(nav);
     right.appendChild(phoneText);
-
     inner.appendChild(left);
     inner.appendChild(right);
     wrapper.appendChild(inner);

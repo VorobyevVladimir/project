@@ -80,6 +80,10 @@ export const contact = () => {
     submitButton.textContent = "Submit Form";
     submitButton.classList.add(styles.submitButton);
 
+    const disclaimer = document.createElement("p");
+    disclaimer.textContent =
+        "We do not promise a reply within 24 hours because that would be a promise we make to everyone and keep for no one. We promise that the right person sees it and responds when there is something worth saying back.";
+
     const formMessage = document.createElement("p");
     formMessage.classList.add(styles.formMessage);
     const formFields = [
@@ -111,9 +115,6 @@ export const contact = () => {
         }
     });
 
-    const disclaimer = document.createElement("p");
-    disclaimer.textContent =
-        "We do not promise a reply within 24 hours because that would be a promise we make to everyone and keep for no one. We promise that the right person sees it and responds when there is something worth saying back.";
     
 
     formCard.appendChild(nameRow);

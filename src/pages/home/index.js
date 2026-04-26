@@ -7,12 +7,6 @@ export const home = () => {
     wrapper.setAttribute('id', 'mainPageWrapper')
     wrapper.classList.add(styles.container)
 
-
-
-    const title = document.createElement('h1');
-    title.textContent = 'SHOP';
-    title.classList.add(styles.title)
-
     const subtitle = document.createElement('span');
     subtitle.textContent = 'ELEVATE YOUR BRAND WITH OUR GLOBAL REACH \n AND PASSIONATE COMMUNITY';
     subtitle.classList.add(styles.subtitle)
@@ -60,7 +54,7 @@ export const home = () => {
         highlights.append(card)
     })
 
-    wrapper.append(title, subtitle, description, ctaButton, highlights)
+    wrapper.append( subtitle, description, ctaButton, highlights)
 
     return wrapper
 }

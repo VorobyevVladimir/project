@@ -27,18 +27,6 @@
     z-index: 1;
 }
 
-
-
-.title {
-    margin: 0;
-    color: white;
-    font-size: 4rem;
-    font-family: Arial, Helvetica, sans-serif;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    text-shadow: 0 4px 18px rgba(0, 0, 0, 0.5);
-}
-
 .subtitle {
     display: block;
     max-width: 52rem;
